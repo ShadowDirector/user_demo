@@ -1,0 +1,7 @@
+
+<% if user_signed_in? %>
+Hello User, youre signed in
+<%= link_to "Logout son", destroy_user_session_path, method: :delete %>
+<% else %>
+<%= link_to "click here to sign in", new_user_registration_path %>
+<% end %>
